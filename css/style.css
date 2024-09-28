@@ -1,0 +1,135 @@
+@font-face {
+    font-family: rock;
+    src: url(/fonts/defused.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: orange;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1;
+}
+.grid-head{grid-column-start: 1 ;
+padding-bottom: 20px;
+background-color: rgb(241, 0, 0);
+margin-bottom: 20px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+.header-picture{
+    width: 100vw;
+}
+
+.grid-main{
+    border: solid;
+    margin: 1rem;
+}
+
+article{
+    margin: 1rem;
+}
+
+.grid-aside{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    font-family: rock;
+
+}
+
+.repoar-text{
+    font-size: 2rem;
+}
+
+.repo-list{
+    list-style: none;
+}
+
+.grid-footer{
+    height: 10rem;
+
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social-media{
+    height: 2.5rem;
+    margin-right: 0.5rem;
+} 
+/* phone version  end */
+
+/* desktop version start */
+@media (min-width: 1000px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 3fr 1fr );
+    }
+
+    .grid-head{ 
+        grid-column: 1 / -1;
+        padding-bottom: 20px;
+        background-color: rgb(241, 0, 0);
+        margin-bottom: 20px;
+        }
+
+    .grid-main{
+        border: solid;
+        margin: 1rem;
+        font-size: 2rem;
+        grid-column: 1/4;
+    }
+
+
+    .grid-aside{
+        border: solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin: 1rem;
+        font-family: rock;
+    
+    }
+    
+    .grid-footer{
+        height: 10rem;
+    
+        background-color: rgb(55, 55, 55);
+        display: flex;
+        font-size: 3rem;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 / -1 ;
+        grid-row: 3 / 4;
+        gap:2rem;
+    }
+
+    .social-media{
+        height: 4.5rem;
+        margin-right: 0.5rem;
+    } 
+}
+
+
+
+

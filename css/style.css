@@ -72,7 +72,8 @@ article{
 
     background-color: rgb(55, 55, 55);
     display: flex;
-    font-size: 1.5rem;
+    flex-direction: row-reverse;
+    font-size: 1.2rem;
     align-items: center;
     justify-content: center;
     

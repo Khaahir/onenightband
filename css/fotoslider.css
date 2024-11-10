@@ -51,3 +51,27 @@ body {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
+.cool-back-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cool-back-button:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cool-back-button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}

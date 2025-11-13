@@ -1,0 +1,1 @@
+Lägg till bilder i public/ mappen. header.jpg ersätter header-bilden.

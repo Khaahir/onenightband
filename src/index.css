@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom */
+.header-img { @apply w-full h-96 object-cover; }
+.hero-overlay { @apply absolute inset-0 flex items-center justify-center bg-gradient-to-b from-black/40 to-black/60; }
+.cta { @apply bg-accent text-white px-4 py-2 rounded-full font-semibold shadow-lg; }
+.nav-link { @apply text-gray-300 px-3 py-2 rounded-md hover:bg-white/5; }
+.card { @apply bg-white/5 p-4 rounded-lg; }

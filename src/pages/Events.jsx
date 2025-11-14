@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Client, Databases } from 'appwrite'
-import dotenv from 'dotenv'
 const client = new Client()
   .setEndpoint(import.meta.env.VITE_APPWRITE_ENDPOINT)
   .setProject(import.meta.env.VITE_APPWRITE_PROJECT)

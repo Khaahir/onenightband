@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function Home(){
+  const videoUrl = "https://www.facebook.com/share/v/1C1BntjShz/";
+
   return (
     <section className="grid md:grid-cols-3 gap-6">
       <div className="md:col-span-2 card">
@@ -43,10 +45,17 @@ export default function Home(){
         <h3 className="font-semibold">Senaste videon</h3>
         <div
           className="mt-3 aspect-video bg-black/40 flex items-center justify-center text-gray-400"
-          role="img"
-          aria-label="Senaste video - plats för video"
+          role="region"
+          aria-label="Senaste video - inbäddad video"
         >
-          Video placeholder
+          <iframe
+            src={videoUrl}
+            title="Senaste video - One Night Band"
+            className="w-full h-full rounded-md"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>

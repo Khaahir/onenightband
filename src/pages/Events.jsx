@@ -28,6 +28,9 @@ export default function Events(){
     fetchEvents()
   },[])
 
+  if(events.length === 0 && !loading && !error){
+    return <div className="text-gray-400">Inga kommande spelningar inlagda.</div>
+  }
   return (
     <div>
       <h2 className="text-2xl font-bold mb-4">Kommande spelningar</h2>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Home(){
   const videoUrl = "/video.mp4"
@@ -24,7 +25,10 @@ export default function Home(){
       <aside className="card">
         <h4 className="font-semibold">Snabbfakta</h4>
         <p className="text-gray-300 mt-2">Bas: Kristinehamn • Reser i hela Sverige • Speltid: 60–120 min</p>
-        <a className="mt-4 inline-block cta" href="/Contact">Boka nu</a>
+  
+<Link className="mt-4 inline-block cta" to="/contact">
+  Boka nu
+</Link>
 
         <h4 className="font-semibold mt-6">Sponsor</h4>
         <img

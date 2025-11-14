@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import { Client, Databases } from 'appwrite'
 
-const endpoint = 'https://[YOUR_APPWRITE_ENDPOINT]' // e.g. https://cloud.appwrite.io/v1
-const project = '[YOUR_PROJECT_ID]'
-const databaseId = '[YOUR_DATABASE_ID]'
-const collectionId = '[YOUR_COLLECTION_ID]'
+const endpoint = 'https://fra.cloud.appwrite.io/v1' // e.g. https://cloud.appwrite.io/v1
+const project = '69171192002674dfadb6'
+const databaseId = '691711ab00294ac1bece'
+const collectionId = 'event'
 
 const client = new Client().setEndpoint(endpoint).setProject(project)
 const databases = new Databases(client)

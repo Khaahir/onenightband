@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Home(){
-  const videoUrl = "https://www.facebook.com/share/v/1C1BntjShz/";
+  const videoUrl = "/video.mp4"
 
   return (
     <section className="grid md:grid-cols-3 gap-6">
@@ -41,14 +41,14 @@ export default function Home(){
           role="region"
           aria-label="Senaste video - inbäddad video"
         >
-          <iframe
+          <video
             src={videoUrl}
-            title="Senaste video - One Night Band"
             className="w-full h-full rounded-md"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+            controls
+            preload="metadata"
+          >
+            Din webbläsare stöder inte videouppspelning.
+          </video>
         </div>
       </div>
     </section>

@@ -19,13 +19,6 @@ export default function Home(){
           <li>Bolaget</li>
         </ul>
 
-        <h3 className="mt-4 font-semibold">Bandmedlemmar</h3>
-        <ul className="list-disc ml-5 mt-2 text-gray-300">
-          <li>Jocke — Sång & gitarr</li>
-          <li>Anna — Bas</li>
-          <li>Mikael — Trummor</li>
-          <li>Sara — Klaviatur & backing</li>
-        </ul>
       </div>
 
       <aside className="card">
